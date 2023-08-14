@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "deploy": "npx gh-pages -d dist"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.2",
@@ -15,13 +16,13 @@
     "@types/d3": "^7.4.0",
     "@types/leaflet": "^1.9.0",
     "@types/topojson": "^3.2.3",
+    "layercake": "^7.2.2",
     "svelte": "^3.49.0",
     "svelte-check": "^2.8.1",
     "svelte-preprocess": "^4.10.7",
     "tslib": "^2.4.0",
     "typescript": "^4.6.4",
-    "vite": "^3.1.0",
-    "layercake": "^7.2.2"
+    "vite": "^3.1.0"
   },
   "dependencies": {
     "@sveltejs/pancake": "^0.0.18",
@@ -29,6 +30,7 @@
     "d3": "^7.6.1",
     "d3-dsv": "^3.0.1",
     "d3-scale-chromatic": "^3.0.0",
+    "gh-pages": "^6.0.0",
     "just-flush": "^2.2.1",
     "layercake": "^7.2.2",
     "leaflet": "^1.9.2",
